@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/halo"
+        android:text="Hallo,-!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tanggal"
+        android:text="08 Januari 2025"
+        app:layout_constraintTop_toBottomOf="@+id/halo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:id="@+id/card1"
+        app:layout_constraintTop_toTopOf="@+id/tanggal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="#590303"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Estimasi Hari Ini"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Rp."
+            android:textSize="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="260dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="40.000,-"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="280dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFC107"
+            android:layout_marginTop="35dp"
+            />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="66dp"
+            android:background="@drawable/trans"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/transaksi"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaksi"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="66dp"
+            android:background="@drawable/pelang"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelanggan"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="145dp"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="66dp"
+            android:background="@drawable/laporan"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laporan"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginEnd="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hati"
+        app:layout_constraintTop_toTopOf="@+id/card1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Siap melayani pelanggan dengan setulus \nhati ❤️"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="170dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pelanggan"
+        android:text="Jangan Kecewakan Pelanggan"
+        android:textSize="14dp"
+        app:layout_constraintTop_toTopOf="@+id/hati"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@+id/pelanggan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="#800000"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp">
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
